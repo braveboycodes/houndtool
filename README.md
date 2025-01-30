@@ -1,5 +1,5 @@
 # 🐾 **Hound v0.2**  
-*By Brave Boy Codes, inspired by [Brave Boy Codes](https://youtube.com/braveboycodes)*  
+*By Brave Boy Codes, inspired by [TechChipNet](https://youtube.com/techchipnet)*  
 
 ![Hound Banner](https://example.com/banner_image.jpg)  
 *Tool for information gathering and GPS coordinates capture.*  
