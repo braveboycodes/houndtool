@@ -1,5 +1,5 @@
 # 🐾 **Hound v0.2**  
-*By Brave Boy Codes, inspired by [TechChip](https://youtube.com/braveboycodes)*  
+*By Brave Boy Codes, inspired by [Brave Boy Codes](https://youtube.com/braveboycodes)*  
 
 ![Hound Banner](https://example.com/banner_image.jpg)  
 *Tool for information gathering and GPS coordinates capture.*  
@@ -88,5 +88,5 @@ Version: 0.2: Remove Ngrok and update cloudflared tunnel
 
 ### For More Video subcribe <a href="http://youtube.com/braveboycodes">Brave Bpy Codes YouTube Channel</a>
 <p>Hound is created to help in penetration testing and it's not responsible for any misuse or illegal purposes.</p>
-credit - Chatbot template : Masud Rana
+<p>credit - Chatbot template : Masud Rana</p>
 The Main Credit : TechChipNet
