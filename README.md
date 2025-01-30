@@ -1,112 +1,92 @@
 # 🐾 **Hound v0.2**  
-*By Brave Boy Codes, inspired by [TechChip](https://youtube.com/techchipnet)*
+*By Brave Boy Codes, inspired by [TechChip](https://youtube.com/braveboycodes)*  
 
 ![Hound Banner](https://example.com/banner_image.jpg)  
-*Tool for information gathering and GPS coordinates capture.*
+*Tool for information gathering and GPS coordinates capture.*  
 
 ---
 
-## **🔍 Overview**
+## **🔍 Overview**  
 
-**Hound v0.2** is a simple and lightweight tool designed for **information gathering** and **GPS coordinates capture**. It runs either via **Cloudflare tunneling (cloudflared)** or locally using a **PHP server**, allowing users to expose targets and capture crucial data like **IP addresses** for penetration testing.
+**Hound v0.2** is a simple and lightweight tool designed for **information gathering** and **GPS coordinates capture**. It runs either via **Cloudflare tunneling (cloudflared)** or locally using a **PHP server**, allowing users to expose targets and capture crucial data like **IP addresses** for penetration testing.  
 
-Inspired by TechChip, this tool provides an easy-to-use and efficient way to collect data and interact with target systems.
-
----
-
-## **✨ Features**
-
-- **💡 Information Gathering**: Automatically captures the **IP addresses** of users who visit the malicious link.
-- **🌐 Cloudflare Tunneling**: Expose your server publicly with Cloudflare's tunneling for an accessible URL.
-- **🏠 Local Server**: Run Hound on **localhost:8080** if Cloudflare is unavailable.
-- **⚙️ Payload Integration**: Seamlessly integrate a payload to capture more user information.
-- **📂 Data Logging**: Logs all gathered information in a structured format for easy review.
+Inspired by TechChip, this tool provides an easy-to-use and efficient way to collect data and interact with target systems.  
 
 ---
 
-## **📦 Dependencies**
+## **✨ Features**  
 
-To run Hound, ensure you have the following installed:
+- **💡 Information Gathering**: Automatically captures the **IP addresses** of users who visit the malicious link.  
+- **🌐 Cloudflare Tunneling**: Expose your server publicly with Cloudflare's tunneling for an accessible URL.  
+- **🏠 Local Server**: Run Hound on **localhost:8080** if Cloudflare is unavailable.  
+- **⚙️ Payload Integration**: Seamlessly integrate a payload to capture more user information.  
+- **📂 Data Logging**: Logs all gathered information in a structured format for easy review.  
 
-- **PHP** (for the local server)
-- **Cloudflared** (for tunneling)
-- **Wget** (for downloading cloudflared)
-- **Linux** or compatible Unix-based systems
+---
 
-Install the missing dependencies:
+## **📦 Dependencies**  
+
+To run Hound, ensure you have the following installed:  
+
+- **PHP** (for the local server)  
+- **Cloudflared** (for tunneling)  
+- **Wget** (for downloading cloudflared)  
+- **Linux** or compatible Unix-based systems  
+
+# What is Hound?
+<p>Hound is a tool that can remotely capture the exact GPS coordinates of a target device using a PHP server, and can also grab basic information about the system and ISP. This tool can be very helpful in information gathering. you can get following information of the target device</p>
+<ul>
+  <li>Longitude</li>
+  <li>Latitude</li>
+  <li>Device Model</li>
+  <li>Operating System</li>
+  <li>Number of CPU Cores</li>
+  <li>Screen Resolution</li>
+  <li>User agent</li>
+  <li>Public IP Address</li>
+  <li>Browser Name</li>
+  <li>ISP Information</li>
+</ul>
+
+## Features
+  <p>The tool offers a wide range of features and functionality, including:</p>
+    <ul>
+  <li>Capture Exact GPS Location</li>
+  <li>Automated Data Collection</li>
+   <li>User-friendly Interface</li>
+</ul>
+
+## This Tool Works On :
+<ul>
+  <li>Kali Linux</li>
+  <li>Windows(WSL)</li>
+  <li>Termux</li>
+  <li>MacOS</li>
+  <li>Ubuntu</li>
+  <li>Parrot Sec OS</li>
+</ul>
+
+## Installing and requirements
 <p>This tool require PHP for webserver, wget & unzip for download and extract cloudflare. First run following command on your terminal</p>
-'''
+
+```
 apt-get -y install php unzip git wget
-'''
+```
 
-## **🚀 Installation**
-Clone the Repository: Clone the repository using the following command:
+## Installing (Kali Linux/Termux):
 
-'''
+```
 git clone https://github.com/techchipnet/hound
 cd hound
-'''
+bash hound.sh
+```
+## Change log:
+Version: 0.2: Remove Ngrok and update cloudflared tunnel
 
-Install Dependencies: Make sure PHP and Wget are installed on your system. You can install them using:
+### Video Demo
+[![Hound Demo](https://img.youtube.com/vi/IiJRyVmITgI/0.jpg)](https://www.youtube.com/watch?v=IiJRyVmITgI)
 
-'''
-sudo apt-get install php wget
-'''
-
-Make Script Executable: Grant execute permissions to the script:
-
-'''
-chmod +x hound.sh
-'''
-
-Run Hound: Execute the tool:
-
-'''
-./hound.sh
-'''
-
-##**⚙️ Usage**
-Running the Tool  
-Once executed, the tool will display a banner and prompt you to choose whether to use Cloudflare tunneling or run it locally.
-
-If you select Cloudflare tunneling, Hound will generate a public URL that can be shared with the target.
-
-If you select the local server option, it will run the tool on localhost:8080.
-
-Hound will wait for the target to open the link, and once they do, it will capture the IP address and any other relevant data, such as GPS coordinates (if applicable).
-
-The captured information is saved in the data.txt file and can be reviewed for further analysis.
-
-##**📂 Files Generated**
-data.txt: Captures data from the target (including IP).  
-saved.ip.txt: Stores the IP addresses of targets.  
-targetreport.txt: A log of all the collected data for reporting purposes.
-
-##**🛠️ Troubleshooting**
-Common Issues  
-PHP Not Installed:  
-If PHP is not installed, use:  
-'''
-sudo apt-get install php
-'''
-
-Cloudflared Issues:  
-If Cloudflared is not installed, make sure to download the correct version based on your system's architecture. The script handles this automatically.
-
-Permission Issues:  
-If you encounter permission issues when executing the script, ensure you’ve granted execute permissions:
-
-chmod +x hound.sh
-
-Firewall/Network Restrictions:  
-If the tool is not functioning as expected, ensure that your firewall or network settings allow outbound traffic and DNS resolution for Cloudflare.
-
-##**💡 Contributions**
-Contributions are always welcome! If you have any suggestions, bug fixes, or improvements, feel free to open an issue or submit a pull request.
-
-##**📜 License**
-This project is licensed under the MIT License. See the LICENSE file for more details.
-
-##**👨‍💻 Credits**
-Brave Boy Codes for developing this tool.  
-TechChip for the inspiration behind the concept.
+### For More Video subcribe <a href="http://youtube.com/braveboycodes">Brave Bpy Codes YouTube Channel</a>
+<p>Hound is created to help in penetration testing and it's not responsible for any misuse or illegal purposes.</p>
+credit - Chatbot template : Masud Rana
+The Main Credit : TechChipNet
